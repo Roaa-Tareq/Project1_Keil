@@ -1,0 +1,609 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Roaa Tareq, Cairo University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.7.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\hp\OneDrive\Documents\Udacity_FWD\__workspace\uVisionProject\Project1\Project1.uvprojx
+Project File Date:  09/26/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+Sprints_ARM_MC01/Src/Config/IntCtrl_Lcfg.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl_Types.h(34): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl_Types.h(37): warning: // comments are not allowed in this language [-Wcomment]
+    INTCTRL_RESET,                // 1 Reset 
+                                  ^
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl_Types.h(53): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Config/IntCtrl_Lcfg.c(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\IntCtrl_Cfg.h(26): warning: // comments are not allowed in this language [-Wcomment]
+#define SCB_APINT_VECTKEY      0x05FA0000  // Vector key access
+                                           ^
+Sprints_ARM_MC01/Src/Config/IntCtrl_Lcfg.c(33): warning: implicit conversion from enumeration type 'IntCtrl_ExceptionType' to different enumeration type 'IntCtrl_InterruptType' [-Wenum-conversion]
+                                                        {INTCTRL_SYS_TICK,      0,    0}
+                                                        ~^~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling IntCtrl_Lcfg.c...
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\IntCtrl_Cfg.h(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl_Types.h(34): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl_Types.h(37): warning: // comments are not allowed in this language [-Wcomment]
+    INTCTRL_RESET,                // 1 Reset 
+                                  ^
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl_Types.h(53): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\IntCtrl_Cfg.h(26): warning: // comments are not allowed in this language [-Wcomment]
+#define SCB_APINT_VECTKEY      0x05FA0000  // Vector key access
+                                           ^
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Common\Mcu_Hw.h(68): warning: // comments are not allowed in this language [-Wcomment]
+#define CORTEXM4_PERI_BASE 0xE000E000 //Cortex-M4 Peripherals Base Address
+                                      ^
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl.h(53): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(110): warning: implicit conversion loses integer precision: 'int' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+            priority = (groupPriority << 1) + subgroupPriority;
+                     ~ ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(114): warning: implicit conversion loses integer precision: 'int' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+            priority = (groupPriority << 2) + subgroupPriority;
+                     ~ ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(145): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for(uint8 i = 0; i < ACTIVATED_INT_NUM; i++)
+        ^
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(145): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(151): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        EN_Index = intNum/32;
+                 ~ ~~~~~~^~~
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(155): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        PRI_Index = intNum/4;
+                  ~ ~~~~~~^~
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(156): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        PRI_BitOffset = (intNum - 4*PRI_Index)*8 + 5;
+                      ~ ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+Sprints_ARM_MC01/Src/Mcal/IntCtrl.c(162): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        (*((volatile uint32 *)(CORTEXM4_PERI_BASE + PRI_Offset))) |= priority << PRI_BitOffset;
+                                                                  ~~ ~~~~~~~~~^~~~~~~~~~~~~~~~
+14 warnings generated.
+compiling IntCtrl.c...
+Sprints_ARM_MC01/Src/Mcal/Dio.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Dio.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Common\Mcu_Hw.h(68): warning: // comments are not allowed in this language [-Wcomment]
+#define CORTEXM4_PERI_BASE 0xE000E000 //Cortex-M4 Peripherals Base Address
+                                      ^
+Sprints_ARM_MC01/Src/Mcal/Dio.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Dio.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(34): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(89): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(102): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(111): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Dio.c(57): warning: implicit conversion loses integer precision: 'unsigned long' to 'Dio_LevelType' [-Wimplicit-int-conversion]
+    Dio_LevelType level = (((GPIODATA_PORTx_APB_M(portIndex,1,pinOffset)) & (1<<pinOffset))>>pinOffset);
+                  ~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+Sprints_ARM_MC01/Src/Mcal/Dio.c(83): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+      default:
+      ^
+Sprints_ARM_MC01/Src/Mcal/Dio.c(100): warning: unused variable 'pinOffset' [-Wunused-variable]
+    uint8 pinOffset = ChannelID%8;
+          ^
+Sprints_ARM_MC01/Src/Mcal/Dio.c(101): warning: unused variable 'portIndex' [-Wunused-variable]
+    uint8 portIndex = ChannelID/8;
+          ^
+Sprints_ARM_MC01/Src/Mcal/Dio.c(103): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+Sprints_ARM_MC01/Src/Mcal/Dio.c(116): warning: implicit conversion loses integer precision: 'volatile uint32' (aka 'volatile unsigned long') to 'Dio_PortLevelType' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    Dio_PortLevelType level = GPIODATA_PORTx_APB_M(PortID,255,0);
+                      ~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sprints_ARM_MC01/Src/Common\Mcu_Hw.h(162): note: expanded from macro 'GPIODATA_PORTx_APB_M'
+#define GPIODATA_PORTx_APB_M(n,v,m)    (*((volatile uint32 *)(GPIO_APB_BASE + (n%4)*0x1000 + (n/4)*0x20000 + GPIODATA_OFFSET + (v<<(m+2))))) //n: Port number, v: set bits, m: offset of set bits
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11 warnings generated.
+compiling Dio.c...
+Sprints_ARM_MC01/Src/Mcal/Port.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\Port_Cfg.h(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Common\Mcu_Hw.h(68): warning: // comments are not allowed in this language [-Wcomment]
+#define CORTEXM4_PERI_BASE 0xE000E000 //Cortex-M4 Peripherals Base Address
+                                      ^
+Sprints_ARM_MC01/Src/Mcal/Port.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\Port_Cfg.h(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(34): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(89): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(102): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(111): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Port.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\Port_Cfg.h(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(36): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(41): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(46): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(55): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(67): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(78): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(89): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Port.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\Port_Cfg.h(26): warning: // comments are not allowed in this language [-Wcomment]
+#define PORT_CFG_GPIODR2R 0x000000FF  // 2-mA Enable
+                                      ^
+Sprints_ARM_MC01/Src/Mcal/Port.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port.h(51): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Sprints_ARM_MC01/Src/Mcal/Port.c(57): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                for(uint8 i = 0; i < ACTIVATED_PORT; i++)
+                    ^
+Sprints_ARM_MC01/Src/Mcal/Port.c(57): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+Sprints_ARM_MC01/Src/Mcal/Port.c(61): warning: // comments are not allowed in this language [-Wcomment]
+      SYSCTL_RCGCGPIO |= 1<<portIndex;                                            // Enable clock gating for port(portIndex)
+                                                                                  ^
+Sprints_ARM_MC01/Src/Mcal/Port.c(69): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+      GPIODIR_PORTx_APB(portIndex) |= ((ConfigPtr[i].pinDirection)<<pinOffset);     // Enable pin(pinOffset) with state(pinDirection)
+                                   ~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+Sprints_ARM_MC01/Src/Mcal/Port.c(70): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+      GPIODEN_PORTx_APB(portIndex) |= ((ConfigPtr[i].pinMode)<<pinOffset);
+                                   ~~  ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+Sprints_ARM_MC01/Src/Mcal/Port.c(75): warning: enumeration value 'PORT_DEFAULT_IA' not explicitly handled in switch [-Wswitch-enum]
+        switch (ConfigPtr[i].pinInternalAttach)
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20 warnings generated.
+compiling Port.c...
+Sprints_ARM_MC01/Src/Appl/main.c(1): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\IntCtrl_Cfg.h(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl_Types.h(34): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl_Types.h(37): warning: // comments are not allowed in this language [-Wcomment]
+    INTCTRL_RESET,                // 1 Reset 
+                                  ^
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl_Types.h(53): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Appl/main.c(1): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\IntCtrl_Cfg.h(26): warning: // comments are not allowed in this language [-Wcomment]
+#define SCB_APINT_VECTKEY      0x05FA0000  // Vector key access
+                                           ^
+Sprints_ARM_MC01/Src/Appl/main.c(1): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Common\Mcu_Hw.h(68): warning: // comments are not allowed in this language [-Wcomment]
+#define CORTEXM4_PERI_BASE 0xE000E000 //Cortex-M4 Peripherals Base Address
+                                      ^
+Sprints_ARM_MC01/Src/Appl/main.c(1): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\IntCtrl.h(53): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Sprints_ARM_MC01/Src/Appl/main.c(2): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Dio.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(34): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(89): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(102): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(111): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Appl/main.c(3): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\Port_Cfg.h(17): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(36): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(41): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(46): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(55): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(67): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(78): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(89): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Appl/main.c(3): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Config/Inc\Port_Cfg.h(26): warning: // comments are not allowed in this language [-Wcomment]
+#define PORT_CFG_GPIODR2R 0x000000FF  // 2-mA Enable
+                                      ^
+Sprints_ARM_MC01/Src/Appl/main.c(3): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port.h(51): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Sprints_ARM_MC01/Src/Appl/main.c(4): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(53): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Sprints_ARM_MC01/Src/Appl/main.c(4): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(36): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(46): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(56): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(66): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Appl/main.c(4): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(53): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Sprints_ARM_MC01/Src/Appl/main.c(13): warning: no previous extern declaration for non-static variable 'state' [-Wmissing-variable-declarations]
+volatile boolean state = 0;
+                 ^
+Sprints_ARM_MC01/Src/Appl/main.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile boolean state = 0;
+         ^
+Sprints_ARM_MC01/Src/Appl/main.c(4): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(67): warning: padding size of 'SysTick_CfgType' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+27 warnings generated.
+compiling main.c...
+Sprints_ARM_MC01/Src/Config/Port_Lcfg.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Common\Mcu_Hw.h(68): warning: // comments are not allowed in this language [-Wcomment]
+#define CORTEXM4_PERI_BASE 0xE000E000 //Cortex-M4 Peripherals Base Address
+                                      ^
+Sprints_ARM_MC01/Src/Config/Port_Lcfg.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(34): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(89): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(102): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/Dio_Types.h(111): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Config/Port_Lcfg.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(36): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(41): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(46): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(55): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(67): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(78): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc\Port_Types.h(89): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Config/Port_Lcfg.c(29): warning: no previous extern declaration for non-static variable 'Port_Cfg_UserDefined' [-Wmissing-variable-declarations]
+const   Port_CfgType    Port_Cfg_UserDefined[] = {
+                        ^
+Sprints_ARM_MC01/Src/Config/Port_Lcfg.c(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const   Port_CfgType    Port_Cfg_UserDefined[] = {
+        ^
+13 warnings generated.
+compiling Port_Lcfg.c...
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc\SysTick.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Common\Mcu_Hw.h(68): warning: // comments are not allowed in this language [-Wcomment]
+#define CORTEXM4_PERI_BASE 0xE000E000 //Cortex-M4 Peripherals Base Address
+                                      ^
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(18): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(53): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(36): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(46): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(56): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(66): warning: '/*' within block comment [-Wcomment]
+/***************************************************************/
+^
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(53): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(56): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    SysTick_STCTRL &= ~(SYSTICK_ENABLE);
+                   ~~ ^~~~~~~~~~~~~~~~~
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(16): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick.h(19): warning: In file included from...
+Sprints_ARM_MC01/Src/Mcal/Inc/SysTick_Types.h(67): warning: padding size of 'SysTick_CfgType' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(63): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        SysTick_STCTRL &= ~(SYSTICK_INT_ENABLE);
+                       ~~ ^~~~~~~~~~~~~~~~~~~~~
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(70): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default:
+    ^
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(77): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        SysTick_STCTRL &= ~(SYSTICK_CLOCK);
+                       ~~ ^~~~~~~~~~~~~~~~
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(84): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default:
+    ^
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(91): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        SysTick_STCTRL &= ~(SYSTICK_ENABLE);
+                       ~~ ^~~~~~~~~~~~~~~~~
+Sprints_ARM_MC01/Src/Mcal/SysTick.c(98): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default:
+    ^
+15 warnings generated.
+compiling SysTick.c...
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(13): warning: In file included from...
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(19): warning: // comments are not allowed in this language [-Wcomment]
+//-------- <<< Use Configuration Wizard in Context Menu >>> ------------------
+^
+45 warnings generated.
+compiling system_TM4C123.c...
+assembling startup_TM4C123.s...
+linking...
+Program Size: Code=2530 RO-data=658 RW-data=56 ZI-data=640  
+".\Objects\Project1.axf" - 0 Error(s), 150 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/hp/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/hp/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
